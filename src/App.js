@@ -3,6 +3,7 @@ import { GeoChart, Cards, Chart, GeoWorld } from "./component";
 import data from "./component/GeoWorld.Chart.geo.json";
 import "./App.css";
 
+
 function App() {
   const [property, setProperty] = useState("pop_est");
 
