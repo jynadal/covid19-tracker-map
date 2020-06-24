@@ -1,9 +1,10 @@
 import React, { useState, useEffect} from 'react';
 import { Card, CardContent, Typography, Grid } from '@material-ui/core';
 import CountUp from 'react-countup';
+//import CountUp from 'use-count-up';
 import cx from 'classnames';
 import styles from './Cards.module.css';
-import Moment from 'react-moment';
+//import Moment from 'react-moment';
 
 
 function Cards() {
@@ -24,9 +25,9 @@ fetch('https://corona.lmao.ninja/v2/all')
 
 }, []);
 
-const date = new Date(parseInt(data.updated));
-  const lastUpdated = date.toString();
-  Moment.globalLocale = 'fr';
+// const date = new Date(parseInt(data.updated));
+//   const lastUpdated = date.toString();
+//   Moment.globalLocale = 'fr';
 
 
     return (
@@ -42,7 +43,7 @@ const date = new Date(parseInt(data.updated));
                         {/* <CountUp start={0} end={globalData.cases} duration={2.75} separator="," /> */}
                     </Typography>
                     <Typography color="textSecondary">
-                        <Moment>{latest.updated}</Moment>
+                        {/* <Moment>{lastUpdated }</Moment> */}
                         {/* {new Date(globalData.update).toDateString()} */}
                     </Typography>
                     <Typography variant="body2" component="p">
@@ -57,10 +58,10 @@ const date = new Date(parseInt(data.updated));
                         </Typography>
                         <Typography variant="h5" component="h2">
                         {globalData.recovered}
-                        <CountUp start={0} end={globalData.recovered} duration={2.75} separator="," />
+                        <CountUp end={globalData.recovered} duration={2.75} separator="," />
                         </Typography>
                         <Typography color="textSecondary">
-                        <Moment>{latest.updated}</Moment>
+                        {/* <Moment>{lastUpdated }</Moment> */}
                         </Typography>
                         <Typography variant="body2" component="p">
                         Nombre de personne gueries du COVID-19.
@@ -73,18 +74,24 @@ const date = new Date(parseInt(data.updated));
                         Décés
                         </Typography>
                         <Typography variant="h5" component="h2">
-                        {globalData.deaths}
-                        <CountUp start={0} end={globalData.deaths} duration={2.75} separator="," />
+                        {/* {globalData.deaths} */}
+                        <CountUp end={globalData.recovered} duration={2.75} separator="," />
                         </Typography>
                         <Typography color="textSecondary">
                         {/* <Moment>{latest.updated}</Moment> */}
-                        {/* {new Date(globalData.updated).toDateString()} */}
+                         {new Date(globalData.updated).toDateString()} 
                         </Typography>
                         <Typography variant="body2" component="p">
                         Nombre de décés dû au COVID-19.
                         </Typography>
                     </CardContent>
                 </Grid>
+                <Grid item xs={12} md={12} component={Card} className={cx(styles.card, styles.deaths)}>
+                    <Typography color="textSecondary" gutterBottom>
+                        Dans tous ça, sachez qu'aujourd'hui, {globalData.todayRecovered} personnes ont été guéris dans le monde. 
+                        </Typography>
+                 </Grid>
+
 
             </Grid>
 
