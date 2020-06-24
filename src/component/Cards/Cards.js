@@ -1,7 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import { Card, CardContent, Typography, Grid } from '@material-ui/core';
 import CountUp from 'react-countup';
-//import CountUp from 'use-count-up';
 import cx from 'classnames';
 import styles from './Cards.module.css';
 //import Moment from 'react-moment';

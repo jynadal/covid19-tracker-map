@@ -1,0 +1,69 @@
+import React, { useState, useEffect} from 'react';
+
+//import Form from 'react-bootstrap/Form';
+import Form, { Input, Fieldset } from 'react-bootstrap-form';
+
+import './Chart.module.css';
+
+
+function Chart() {
+
+const [results,setResults] = useState(null);
+const [searchCountries, setSearchCountries] = useState("");
+
+useEffect(() => {
+    fetch('https://corona.lmao.ninja/v2/countries')
+        .then(response => response.ok && response.json())
+        .then(dataItems => setResults(dataItems));
+//.catch(error => console.log(error));    
+}, []);
+
+
+const filterCountries = results.filter(item => {
+    return searchCountries !== "" ? item.country.includes(searchCountries) : item;
+  })
+
+    
+
+return (
+    <div>
+        <Form>
+        <Input type="Text" name="username" label="Recherche" />,
+        <Input type="Text" placeholder="Recherche un Pays"
+                onChange={e => setSearchCountries(e.target.value)} />
+ 
+        <Fieldset label="">
+          <button className="btn btn-primary" type="submit">Post</button>
+        </Fieldset>
+      </Form>
+
+        <Form>
+            <Form.Group controlId="formGroupSearch">
+                <Form.Label>Recherche</Form.Label>
+                <Form.Control 
+                type="text" 
+                placeholder="Recherche un Pays"
+                onChange={e => setSearchCountries(e.target.value)} 
+            />
+            </Form.Group>
+        </Form>
+
+        const countries = filterCountries.map((dataItems, i) => {
+
+        return (
+
+                <h3>Chart in action {countries.country}</h3>
+            );
+        });
+
+
+    </div>
+);
+
+
+
+};
+
+
+
+export default Chart;
