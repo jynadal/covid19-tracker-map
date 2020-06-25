@@ -1,3 +1,26 @@
 h3 {
     background-color: darkcyan;
 }
+
+.Chart{
+    display:block;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+  }
+  .conuntry-flag .conuntry-data {
+    display: inline-flexbox;
+    flex-direction:row;
+    align-items: center;
+    margin: 50px 0;
+  }
+
+
+  @media only screen and (max-width: 770px) {
+    .card {
+      margin: 2% 0 !important;
+    }
+  }

@@ -1,6 +1,10 @@
 import React, { useRef, useEffect, useState } from "react";
 import { select, geoPath, geoMercator, min, max, scaleLinear } from "d3";
 import useResizeObserver from "./../../useResizeObserver";
+//import {Chart} from '../Chart/Chart';
+import { fetchCountries} from '../../api';
+
+
 
 import  './GeoChart.module.css';
 
@@ -13,13 +17,42 @@ function GeoChart({ data, property }) {
   const wrapperRef = useRef();
   const dimensions = useResizeObserver(wrapperRef);
   //const [selectedCountry, setSelectedCountry] = useState(null);
+  const [countries, setCountries] = useState(null);
 
   // will be called initially and on every data change
   useEffect(() => {
+
+    const fetchAPI = async () => {
+      setCountries(await fetchCountries());
+    };
+
+    //const dataCountries = {countries.map(country, i)}
+
+    //const minCov = min(fetchCountries.countries, country => fetchCountries[cases]);
+    //const maxCov = max(data.features, feature => feature.properties[property]);
+    console.warn(minCov,maxCov);
+
+  
+
+    fetchAPI();
+  },[]);
+
+    useEffect(() => {
+
     const svg = select(svgRef.current);
 
-    // const minProp = min(data.features, feature => feature.properties[property]);
+     //const minProp = min(data.feature,
+     // Chart.country => Chart.country.cases);
+     const minProp = min(data.features, feature => feature.properties[property]);
+     const maxProp = max(data.features, feature => feature.properties[property]);
+     console.warn(minProp,maxProp);
+     
+
+
     // const maxProp = max(data.features, feature => feature.properties[property]);
+    console.log(data.features);
+     //console.log(fetchCountries.countries.name);
+
     // const colorScale = scaleLinear()
     //   .domain([minProp, maxProp])
     //   .range(["#ccc", "red"]);

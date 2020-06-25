@@ -13,7 +13,7 @@ function App() {
       <GeoChart  data={data} />
       <h2>Select property to highlight</h2>
        <Cards  />
-       <Chart  />
+       {/* <Chart  /> */}
     </React.Fragment>
   );
 }
