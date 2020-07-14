@@ -12,3 +12,6 @@ svg {
     cursor: pointer;
     
   }
+  .country {
+    fill: lightgreen;
+  }

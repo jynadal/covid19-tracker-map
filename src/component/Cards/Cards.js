@@ -32,6 +32,7 @@ fetch('https://corona.lmao.ninja/v2/all')
     return (
         <div className={styles.container}>
             <Grid container spacing={3} justify="center">
+                
                 <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.infected)}>
                     <CardContent>
                     <Typography color="textSecondary" gutterBottom>
@@ -73,7 +74,7 @@ fetch('https://corona.lmao.ninja/v2/all')
                         Décés
                         </Typography>
                         <Typography variant="h5" component="h2">
-                        {/* {globalData.deaths} */}
+                        {globalData.deaths}
                         <CountUp end={globalData.recovered} duration={2.75} separator="," />
                         </Typography>
                         <Typography color="textSecondary">

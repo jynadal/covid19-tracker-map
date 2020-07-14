@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { GeoChart, Cards, Chart, GeoWorld } from "./component";
+import { GeoChart, Cards, Chart, GeoWorld, ChoroMap } from "./component";
 import data from "./component/GeoWorld.Chart.geo.json";
 import "./App.css";
 
@@ -10,10 +10,11 @@ function App() {
   return (
     <React.Fragment>  
       <h2>World Map with d3-geo</h2>
+      {/* <ChoroMap /> */}
       <GeoChart  data={data} />
       <h2>Select property to highlight</h2>
        <Cards  />
-       {/* <Chart  /> */}
+       <Chart  />
     </React.Fragment>
   );
 }

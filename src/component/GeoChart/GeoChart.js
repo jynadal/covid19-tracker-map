@@ -30,7 +30,7 @@ function GeoChart({ data, property }) {
 
     //const minCov = min(fetchCountries.countries, country => fetchCountries[cases]);
     //const maxCov = max(data.features, feature => feature.properties[property]);
-    console.warn(minCov,maxCov);
+    //console.warn(minCov,maxCov);
 
   
 
