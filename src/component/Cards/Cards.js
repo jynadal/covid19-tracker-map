@@ -86,7 +86,7 @@ fetch('https://corona.lmao.ninja/v2/all')
                         </Typography>
                     </CardContent>
                 </Grid>
-                <Grid item xs={12} md={12} component={Card} className={cx(styles.card, styles.deaths)}>
+                <Grid item xs={12} md={12} component={Card} className={cx(styles.card, styles.recovered)}>
                     <Typography color="textSecondary" gutterBottom>
                         Dans tous ça, sachez qu'aujourd'hui, {globalData.todayRecovered} personnes ont été guéris dans le monde. 
                         </Typography>

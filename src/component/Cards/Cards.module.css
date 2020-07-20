@@ -19,6 +19,7 @@ h2 {
   
   .recovered{
     border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+    text-align: center;
   }
   
   .deaths{

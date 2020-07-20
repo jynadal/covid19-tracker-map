@@ -1,49 +1,70 @@
-h3 {
-    background-color: darkcyan;
+* {
+  box-sizing: border-box;
 }
 
-.Chart {
-  flex-grow: 1;
+.Charts {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 80px;
 }
 
-paper {
-  padding: 2;
-  margin: 'auto';
-  max-width: 500;
+.Charts > h1 {
+  margin-bottom: 5px;
 }
 
- .image {
-    width: 128;
-  height: 128;
-}
-.img {
-  margin: 'auto';
-  display: 'block';
-  max-width: '100%';
-  max-height: '100%';
+.Charts > h2 {
+  margin-top: 5px;
+  opacity: 0.7;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
 }
 
-/*
-{
-    display:block;
+.fetch-button {
+  min-width: 150px;
+  margin-bottom: 30px;
+  padding: 15px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(54, 202, 165);
+  border: none;
+  color: rgb(15, 66, 54);
+  transition: all 0.5s;
 }
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 0;
-  }
-  .conuntry-flag .conuntry-data {
-    display: inline-flexbox;
-    flex-direction:row;
-    align-items: center;
-    margin: 50px 0;
-  }
 
+.fetch-button:hover {
+  background-color: rgb(40, 209, 209);
+}
 
-  @media only screen and (max-width: 770px) {
-    .card {
-      margin: 2% 0 !important;
-    }
-  }
-  */
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  position: relative;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: 30%;
+  color: #333;
+  flex-basis: width;
+  background-color: rgb(165, 230, 230);
+}
+
+.card h3 {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.card h2 {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.details {
+  text-align: left;
+}

@@ -1,0 +1,113 @@
+import React, { useState, useEffect} from 'react';
+
+//import Form from 'react-bootstrap/Form';
+import Form, { Input, Fieldset } from 'react-bootstrap-form';
+
+import './Chart.module.css';
+
+
+function Chart() {
+
+const [results,setResults] = useState(null);
+const [searchCountries, setSearchCountries] = useState("");
+
+useEffect(() => {
+    fetch('https://corona.lmao.ninja/v2/countries')
+        .then(response => response.ok && response.json())
+        .then(dataItems => setResults(dataItems));
+//.catch(error => console.log(error));    
+}, []);
+
+
+const filterCountries = results.filter(item => {
+    return searchCountries !== "" ? item.country.includes(searchCountries) : item;
+  })
+
+    
+
+return (
+    <div>
+        <Form>
+        <Input type="Text" name="username" label="Recherche" />,
+        <Input type="Text" placeholder="Recherche un Pays"
+                onChange={e => setSearchCountries(e.target.value)} />
+ 
+        <Fieldset label="">
+          <button className="btn btn-primary" type="submit">Post</button>
+        </Fieldset>
+      </Form>
+
+        <Form>
+            <Form.Group controlId="formGroupSearch">
+                <Form.Label>Recherche</Form.Label>
+                <Form.Control 
+                type="text" 
+                placeholder="Recherche un Pays"
+                onChange={e => setSearchCountries(e.target.value)} 
+            />
+            </Form.Group>
+        </Form>
+
+        const countries = filterCountries.map((dataItems, i) => {
+
+        return (
+
+                <h3>Chart in action {countries.country}</h3>
+            );
+        });
+
+
+    </div>
+);
+
+
+
+};
+
+
+
+export default Chart;
+
+
+
+ <Grid  container  spacing={1} justify="left" key={index}>
+
+                        {/*<Grid className="countryFlag"  >   //spacing={1}  */}
+
+                            <Grid item xs={12} sm={6} md={3} component={Card} className="country-flag" className={cx(styles.card)}>
+
+                                <Typography color="textSecondary" gutterBottom>
+                                    Drapeau ⛳ {country.flag} personnes ont été guéris dans le monde. 
+                                    </Typography>
+                            </Grid>
+
+                            <Grid item xs={12} sm={6} md={3} component={Card} className="country-data" className={cx(styles.chart)}>
+                                <CardContent>
+                                
+                                <Typography variant="h5" component="h2">
+                                {country.country}
+                                {/* <CountUp start={0} end={globalData.cases} duration={2.75} separator="," /> */}
+                                </Typography>
+                                <Typography color="textSecondary" gutterBottom>
+                                <p>👨: {country.deaths}</p>
+                                </Typography>
+                                <Typography color="textSecondary" gutterBottom>
+                                <p>📖: {country.recovered}</p>
+                                </Typography>
+                                <Typography color="textSecondary">
+                                <p>🏘️: {country.cases}</p>
+                                </Typography>
+                                <Typography color="textSecondary">
+                                <p>🏘️: {index}</p>
+                                </Typography>
+
+                                <Typography variant="body2" component="p">
+                                Nombre de personne ayant contractés la COVID-19.
+                                </Typography>
+                                <Typography color="textSecondary">
+                                <p>;): {lastUpdate}</p>
+                                </Typography>
+
+                                </CardContent>
+                            </Grid>
+                        </Grid> 

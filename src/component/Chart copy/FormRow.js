@@ -9,12 +9,14 @@ const useStyles = makeStyles((theme) => ({
 	root: {
         display: 'flex',
 		flexWrap: 'wrap',
+		maxWidth: '33%',
+
 	},
-	paper: {
-		padding: theme.spacing(2),
-		margin: 'auto',
-		maxWidth: 500
-	},
+	// paper: {
+	// 	padding: theme.spacing(2),
+	// 	margin: 'auto',
+	// 	maxWidth: 300,
+	// },
 	image: {
 		width: 128,
 		height: 128
@@ -49,7 +51,7 @@ function FormRow() {
 					return (
 						<div className={classes.root}>
 							<Paper className={classes.paper}>
-								<Grid container  item sm={12} md={6} spacing={2}>
+								<Grid container  item sm={12} md={4} spacing={2}>
 									<Grid item xs={12} sm={4} md={2}>
 										<ButtonBase className={classes.image}>
 											<img

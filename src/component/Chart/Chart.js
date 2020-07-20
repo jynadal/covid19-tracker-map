@@ -1,24 +1,7 @@
-import React, { useState, useEffect} from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { Grid} from '@material-ui/core';
-//import cx from 'classnames';
-import FormRow from './FormRow';
+import React, { useState, useEffect} from "react";
+import InfoBar from "./InfoBar";
 
-//import Form from 'react-bootstrap/Form';
-//import Form, { Input, Fieldset } from 'react-bootstrap-form';
-
-import styles from  './Chart.module.css';
-
-const useStyles = makeStyles((theme) => ({
-	root: {
-        flexGrow: 1,
-	},
-	paper: {
-		padding: theme.spacing(1),
-		textAlign: 'center',
-	},
-
-}));
+import './Chart.module.css';
 
 
 function Chart() {
@@ -33,32 +16,54 @@ function Chart() {
     //.catch(error => console.log(error));    
     }, []);         
 
-    return (
-        <div className="Chart">
-            <h2>Les Charts des Pays avec des Data par pays</h2>
+
+  return (
+    <div className="Charts">
+        {/* //APP */}
+       <h2>Les Charts des Pays avec des Data par pays</h2>
             <h3>Fetch a list from an API and display it</h3>
 
-               
+      {/* Fetch data from API 
+      <div>
+        <button className="fetch-button" onClick={fetchBooks}>
+          Fetch Data
+        </button>
+        <br />
+      </div>*/}
 
-                    <div className={styles.container} >
-                        <Grid container spacing={1}>
-                            <Grid container item md={12} spacing={3}>
-                                <Grid item sm={12} md={6}>
-                                 <FormRow />
-                                </Grid>
+      {/* Display data from API */}
 
-                            </Grid>
-                        </Grid>
-                    
-                    </div>
-               
+      {/* Use JSX below for each book */}
 
-        </div>
+      <div className="charts">
+      {results &&
+				results.map((country, index) => {
+					//const lastUpdate = new Date(country.updated).toLocaleDateString();
 
+	    return (
+              <div className="card" key={country.index}>
+                <h3><img 
+					alt={'Drapeaux de ' + country.country}
+					src={country.flag}/></h3>
+                <h2>{country.country}</h2>
 
-    )
-    
-};
+                <div className="details">
+                  <p>👨: {country.deaths}</p>
+                  <p>📖: {country.recovered}</p>
+                  <p>🏘️: {country.index}</p>
+                  <p>⏰:  {country.cases}</p>
+                </div>
+              </div>
+            );
+          })}
+        ;
+      </div>
+
+      <InfoBar seriesNumber="7" />
+    </div>
+  );
+}
+
 
 
 export default Chart;
