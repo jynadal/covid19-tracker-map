@@ -1,5 +1,4 @@
 import React, { useState, useEffect} from "react";
-import InfoBar from "./InfoBar";
 
 import './Chart.module.css';
 
@@ -14,7 +13,13 @@ function Chart() {
             .then(response => response.ok && response.json())
             .then(dataItems => setResults(dataItems));
     //.catch(error => console.log(error));    
-    }, []);         
+    }, []); 
+    
+    // const filterCountry = results.filter(item => {
+    //   return item.country === searchCountries;
+    // })
+
+    // const handleChange = evt => setSearchCountries(evt.target.value)
 
 
   return (
@@ -22,6 +27,7 @@ function Chart() {
         {/* //APP */}
        <h2>Les Charts des Pays avec des Data par pays</h2>
             <h3>Fetch a list from an API and display it</h3>
+            
 
       {/* Fetch data from API 
       <div>
@@ -35,9 +41,10 @@ function Chart() {
 
       {/* Use JSX below for each book */}
 
-      <div className="charts">
+      <div className="chart">
+      
       {results &&
-				results.map((country, index) => {
+			filterCountry.map((country, index) => {
 					//const lastUpdate = new Date(country.updated).toLocaleDateString();
 
 	    return (
@@ -59,7 +66,6 @@ function Chart() {
         ;
       </div>
 
-      <InfoBar seriesNumber="7" />
     </div>
   );
 }
