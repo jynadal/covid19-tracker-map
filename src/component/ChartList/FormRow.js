@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import SearchBox from './SearchBox';
+
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import ButtonBase from '@material-ui/core/ButtonBase';
+
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -29,23 +32,28 @@ const useStyles = makeStyles((theme) => ({
 	}
 }));
 
-function FormRow() {
+function FormRow(results) {
 	const classes = useStyles();
 
-	const [ results, setResults ] = useState(null);
-	const [ searchCountries, setSearchCountries ] = useState('');
+	// const [ results, setResults ] = useState(null);
+	// const [searchField, setSearchField] = useState("");
 
-	useEffect(() => {
-		fetch('https://corona.lmao.ninja/v2/countries')
-			.then((response) => response.ok && response.json())
-			.then((dataItems) => setResults(dataItems));
-		//.catch(error => console.log(error));
-	}, []);
+	// const [ searchCountries, setSearchCountries ] = useState('');
+
+
+	// useEffect(() => {
+	// 	fetch('https://corona.lmao.ninja/v2/countries')
+	// 		.then((response) => response.ok && response.json())
+	// 		.then((dataItems) => setResults(dataItems));
+	// 	//.catch(error => console.log(error));
+	// }, []);
+
+
 
 	return (
 		<div className="FormRow">
-			{results &&
-				results.map((country, index) => {
+			
+			{results && results.map((country, index) => {
 					//const lastUpdate = new Date(country.updated).toLocaleDateString();
 
 					return (
