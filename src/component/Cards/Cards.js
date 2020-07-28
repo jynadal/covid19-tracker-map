@@ -1,9 +1,11 @@
 import React, { useState, useEffect} from 'react';
 import { Card, CardContent, Typography, Grid } from '@material-ui/core';
-import CountUp from 'react-countup';
+import {useCountUp} from 'react-countup';
 import cx from 'classnames';
 import styles from './Cards.module.css';
-//import Moment from 'react-moment';
+import moment from 'moment/min/moment-with-locales';
+import Moment from 'react-moment';
+//import Moment from 'moment';
 
 
 function Cards() {
@@ -24,14 +26,18 @@ fetch('https://corona.lmao.ninja/v2/all')
 
 }, []);
 
-// const date = new Date(parseInt(data.updated));
-//   const lastUpdated = date.toString();
-//   Moment.globalLocale = 'fr';
+const momentDate = moment(globalData.updated).fromNow();
+moment.locale('fr-ch');
+
+const { countUp } = useCountUp({
+    start:0, end: 45896325, delay:1000, duration: 5
+});
+
 
 
     return (
         <div className={styles.container}>
-            <Grid container spacing={3} justify="center">
+            <Grid container spacing={1} justify="center">
                 
                 <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.infected)}>
                     <CardContent>
@@ -39,12 +45,15 @@ fetch('https://corona.lmao.ninja/v2/all')
                         Contaminées
                     </Typography>
                     <Typography variant="h5" component="h2">
-                    {globalData.cases}
-                        {/* <CountUp start={0} end={globalData.cases} duration={2.75} separator="," /> */}
+                        {countUp}
+                 
+                    {/* {globalData.cases}
+                    
+                        <CountUp start={0} end={globalData.cases} duration={2.75} separator="," /> */}
                     </Typography>
                     <Typography color="textSecondary">
-                        {/* <Moment>{lastUpdated }</Moment> */}
-                        {/* {new Date(globalData.update).toDateString()} */}
+                        {/* <Moment>{lastUpdated }</Moment>
+                        {new Date(globalData.update).toDateString()} */}
                     </Typography>
                     <Typography variant="body2" component="p">
                     Nombre de personne ayant contractés la COVID-19.
@@ -57,11 +66,12 @@ fetch('https://corona.lmao.ninja/v2/all')
                         Guéris
                         </Typography>
                         <Typography variant="h5" component="h2">
+                  
                         {globalData.recovered}
-                        <CountUp end={globalData.recovered} duration={2.75} separator="," />
+                        <countUp start={0} end={globalData.recovered} duration={2.75} separator=" " />
                         </Typography>
                         <Typography color="textSecondary">
-                        {/* <Moment>{lastUpdated }</Moment> */}
+                        <moment>{momentDate }</moment>
                         </Typography>
                         <Typography variant="body2" component="p">
                         Nombre de personne gueries du COVID-19.
@@ -74,12 +84,13 @@ fetch('https://corona.lmao.ninja/v2/all')
                         Décés
                         </Typography>
                         <Typography variant="h5" component="h2">
+                    
                         {globalData.deaths}
-                        <CountUp end={globalData.recovered} duration={2.75} separator="," />
+                        <countUp end={globalData.recovered} duration={2.75} separator="," />
                         </Typography>
                         <Typography color="textSecondary">
                         {/* <Moment>{latest.updated}</Moment> */}
-                         {new Date(globalData.updated).toDateString()} 
+                         {/* {new Date(globalData.updated).toDateString()}  */}
                         </Typography>
                         <Typography variant="body2" component="p">
                         Nombre de décés dû au COVID-19.

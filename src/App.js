@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { GeoChart, Cards, ChartList, SearchBox, GeoWorld, ChoroMap } from "./component";
 import data from "./component/GeoWorld.Chart.geo.json";
 import Header from './Header';
-import { Grid } from '@material-ui/core';
+import { Grid, Box } from '@material-ui/core';
 import "./App.css";
 
 
@@ -18,21 +18,31 @@ function App() {
           <Header />
       </Grid>
 
-      <Grid item container>
-        <Grid item xs={0} sm={2} />
-        <Grid item xs={12} sm={8}>
+      <Box display={{ xs: 'none', md: 'block' }} m={1}>      
+        <Grid item>
             {/* <ChoroMap /> */}
             <GeoChart  data={data} />
-            <h2>Select property to highlight</h2>
+              <h2>Select property to highlight</h2>
         </Grid>
+      </Box>
+
+      <Grid item container>
+      <Grid item xs={false} sm={2} />
         <Grid item xs={12} sm={8}>
           <Cards  />
         </Grid>
-        <Grid item xs={12} sm={8}>
-          <ChartList  />
+      </Grid>
+      
+
+      <Grid item container>
+        <Grid item xs={false} sm={2} />
+        <Grid item xs={12} sm={8}>  
+        <ChartList  />        
         </Grid>
+      </Grid>
 
-
+      <Grid item>
+          <Header />
       </Grid>
 
       </Grid>

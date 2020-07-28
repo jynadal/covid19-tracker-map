@@ -1,34 +1,47 @@
 import React, { useState, useEffect} from 'react';
-import FormRow from './FormRow';
-import SearchBox from './SearchBox';
+
 import axios from 'axios';
+import {Card, Grid, CardHeader, CardContent, Typography, Avatar } from '@material-ui/core';
+import { makeStyles  } from '@material-ui/core/styles';
+import moment from 'moment/min/moment-with-locales';
 
-import { makeStyles } from '@material-ui/core/styles';
-import { Grid} from '@material-ui/core';
+//import './ChartList.module.css';
+//import styles from  './ChartList.module.css';
 
-import './ChartList.module.css';
-import styles from  './ChartList.module.css';
+// const useStyles = makeStyles((theme) => ({
+// 	root: {
+//         flexGrow: 1,
+// 	},
+// 	paper: {
+// 		padding: theme.spacing(1),
+// 		textAlign: 'center',
+// 	},
 
-const useStyles = makeStyles((theme) => ({
-	root: {
-        flexGrow: 1,
-	},
-	paper: {
-		padding: theme.spacing(1),
-		textAlign: 'center',
-	},
+// }));
 
-}));
+const useStyles = makeStyles({
+   
+    title: {
+      fontSize: 14,
+    },
+    pos: {
+      marginBottom: 12,
+    },
+  });
 
 
 function ChartList() {
 
+    const classes = useStyles();
+
     const [data, setData] = useState([]);
     const [searchResults,setSearchResults] = useState([]);
     const [searchField, setSearchField] = useState("");
-  let results;
+ // let results;
 
     const handleChange = evt => setSearchField(evt.target.value);
+
+  
 
 
     useEffect(() => {
@@ -51,13 +64,21 @@ function ChartList() {
         );
         setData(results)
       },[searchField])
-   
+
+    //   useEffect(() =>{
+    //     const momentUpdated = moment(country.updated).fromNow();
+    //   },[])   
     
+    // let momentUpdated(dateupdate) => moment(dateUpdate).fromNow();
+    // moment.locale("fr-ch");
+
     const onChange = (evt) => {
     setSearchField(evt.target.value);
     }
-
+    
     return (
+       
+
         <div className="Chart">
             <h2>Les Charts des Pays avec des Data par pays</h2>
             <h3>Fetch a list from an API and display it</h3>
@@ -68,27 +89,59 @@ function ChartList() {
                     value={searchField}
                     onChange={handleChange}
             />
+            <Grid container spacing={4}>
+                
+            
+                {data.map((country,index) =>(
+
+                    <Grid item  key={index} xs={12} sm={6} lg={4} >
+                        <Card >
+                        <CardHeader
+                        avatar={
+                        <Avatar aria-label="recipe" className={classes.avatar}>
+                            {country.countryInfo.iso2}
+                        </Avatar>
+                        }
+                        title={country.country}
+                        subheader={country.updated}
+                    />
+                          <img
+                                //className={classes.img}
+                                alt={'Drapeaux de ' + country.country}
+                                src={country.countryInfo.flag}
+                            />
+                    <CardContent>
+                        <Typography className={classes.title} color="textSecondary" gutterBottom>
+                        Number of the Day are {country.recovered} recovere.
+                        </Typography>
+                         {moment(country.updated).fromNow()}
+                        <Typography variant="h5" component="h2">
+                        {country.country}
+                        </Typography>
+                        <Typography className={classes.pos} color="textSecondary">
+                        👨: {country.deaths}
+                        </Typography>
+                        <Typography variant="body2" component="p">
+                        {country.cases} of cases. 
+                        <br />
+                        {country.updated}
+                        </Typography>
+                    </CardContent>
+                
+                </Card>
+
+               </Grid>
+
+                    )
+                   
+
+                    )};
+                
+          
+            </Grid>
 
                              
-                             {data.map((country,index) =>(
-
-                             <ul key={index}>
-
-                                 <li>{country.country}</li>
-                                <img
-												//className={classes.img}
-												alt={'Drapeaux de ' + country.country}
-												src={country.countryInfo.flag}
-											/>
-                                            
-                                 <li>👨: {country.deaths}</li>
-                                 <li>📖: {country.recovered}</li>
-                                 <li>🏘️: {country.cases}</li>
-                                 <li>🏘️: {country.cases}</li>
-                                 <li>🏘️: {index}</li>
-                                 </ul>
-                                 )
-                                 )}
+                            
                
 
         </div>
