@@ -1,10 +1,12 @@
 import React, { useState, useEffect} from 'react';
 import { Card, CardContent, Typography, Grid } from '@material-ui/core';
-import {useCountUp} from 'react-countup';
+//import {CountUp} from 'react-countup';
+//import { countUp } from './Countup';
+import CountUp from 'react-countup-light';
 import cx from 'classnames';
 import styles from './Cards.module.css';
 import moment from 'moment/min/moment-with-locales';
-import Moment from 'react-moment';
+//import Moment from 'react-moment';
 //import Moment from 'moment';
 
 
@@ -29,13 +31,11 @@ fetch('https://corona.lmao.ninja/v2/all')
 const momentDate = moment(globalData.updated).fromNow();
 moment.locale('fr-ch');
 
-const { countUp } = useCountUp({
-    start:0, end: 45896325, delay:1000, duration: 5
-});
 
-
+// const { countUp } = useCountUp({ end: 123456789, delay:1000, separator: "," });
 
     return (
+        
         <div className={styles.container}>
             <Grid container spacing={1} justify="center">
                 
@@ -45,11 +45,11 @@ const { countUp } = useCountUp({
                         Contaminées
                     </Typography>
                     <Typography variant="h5" component="h2">
-                        {countUp}
+                    {/* {countUp} */}
                  
-                    {/* {globalData.cases}
+                    {/* {globalData.cases} */}
                     
-                        <CountUp start={0} end={globalData.cases} duration={2.75} separator="," /> */}
+                        <CountUp startNum={1000000} endNum={globalData.cases} duration={10} separator="," />
                     </Typography>
                     <Typography color="textSecondary">
                         {/* <Moment>{lastUpdated }</Moment>
@@ -66,9 +66,9 @@ const { countUp } = useCountUp({
                         Guéris
                         </Typography>
                         <Typography variant="h5" component="h2">
-                  
-                        {globalData.recovered}
-                        <countUp start={0} end={globalData.recovered} duration={2.75} separator=" " />
+{/*                   
+                        {globalData.recovered} */}
+                        <CountUp startNum={1000000} endNum={globalData.recovered} duration={155} separator=" " />
                         </Typography>
                         <Typography color="textSecondary">
                         <moment>{momentDate }</moment>
@@ -83,17 +83,16 @@ const { countUp } = useCountUp({
                         <Typography color="textSecondary" gutterBottom>
                         Décés
                         </Typography>
-                        <Typography variant="h5" component="h2">
-                    
-                        {globalData.deaths}
-                        <countUp end={globalData.recovered} duration={2.75} separator="," />
+                        <Typography variant="h5" component="h2">                    
+                        {/* {globalData.deaths} */}
+                        <CountUp startNum={10000} endNum={globalData.deaths} duration={150} separator="," />
                         </Typography>
                         <Typography color="textSecondary">
                         {/* <Moment>{latest.updated}</Moment> */}
                          {/* {new Date(globalData.updated).toDateString()}  */}
                         </Typography>
                         <Typography variant="body2" component="p">
-                        Nombre de décés dû au COVID-19.
+                        Nombre de {globalData.deaths} décés dû au COVID-19.
                         </Typography>
                     </CardContent>
                 </Grid>
