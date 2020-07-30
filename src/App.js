@@ -28,7 +28,8 @@ function App() {
 
       <Grid item container>
       <Grid item xs={false} sm={2} />
-        <Grid item xs={12} sm={8}>
+        <Grid item xs={12} sm={12}>
+        <h2>Nombre de personne ayant contractés la Covid-19 dans le monde.</h2>
           <Cards  />
         </Grid>
       </Grid>

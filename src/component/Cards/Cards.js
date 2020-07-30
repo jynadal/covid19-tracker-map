@@ -42,39 +42,40 @@ moment.locale('fr-ch');
                 <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.infected)}>
                     <CardContent>
                     <Typography color="textSecondary" gutterBottom>
-                        Contaminées
+                        Contaminées aux Covid-19
                     </Typography>
-                    <Typography variant="h5" component="h2">
-                    {/* {countUp} */}
-                 
-                    {/* {globalData.cases} */}
-                    
-                        <CountUp startNum={1000000} endNum={globalData.cases} duration={10} separator="," />
+                    <Typography variant="h5" component="h2">                    
+                        <CountUp startNum={10799999} endNum={globalData.cases} duration={1} />
                     </Typography>
                     <Typography color="textSecondary">
                         {/* <Moment>{lastUpdated }</Moment>
                         {new Date(globalData.update).toDateString()} */}
                     </Typography>
                     <Typography variant="body2" component="p">
-                    Nombre de personne ayant contractés la COVID-19.
+                        Nombre de personne ayant contractés la COVID-19 dans le monde. 
                     </Typography>
+                    <Typography variant="body2" component="p">
+                        Et <span>{globalData.todayCases}</span> personnes on étaient comptabilisé positifs aux coronavirus aujourd'hui. Les données date: <moment color="textSecondary">{momentDate }</moment> .
+                    </Typography>
+                    <Typography color="textSecondary">
+                        <moment>{momentDate }</moment>
+                        </Typography>
                     </CardContent>
                 </Grid>
+
                 <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.recovered)}>
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>
-                        Guéris
+                        Guéris du Coronavirus
                         </Typography>
                         <Typography variant="h5" component="h2">
-{/*                   
-                        {globalData.recovered} */}
-                        <CountUp startNum={1000000} endNum={globalData.recovered} duration={155} separator=" " />
+                        <CountUp startNum={10699999} endNum={globalData.recovered} duration={1} />
+                        </Typography>                        
+                        <Typography variant="body2" component="p">
+                            Heureusement {globalData.recovered} de personne dans le monde ont gueris du Covid-19. < br /> Mais en attendant un vaccin, prennez grand soin de vous et de vos proches.
                         </Typography>
                         <Typography color="textSecondary">
                         <moment>{momentDate }</moment>
-                        </Typography>
-                        <Typography variant="body2" component="p">
-                        Nombre de personne gueries du COVID-19.
                         </Typography>
                     </CardContent>
                 </Grid>
@@ -85,20 +86,23 @@ moment.locale('fr-ch');
                         </Typography>
                         <Typography variant="h5" component="h2">                    
                         {/* {globalData.deaths} */}
-                        <CountUp startNum={10000} endNum={globalData.deaths} duration={150} separator="," />
+                        <CountUp startNum={655555} endNum={globalData.deaths} duration={150} separator="," />
                         </Typography>
                         <Typography color="textSecondary">
                         {/* <Moment>{latest.updated}</Moment> */}
                          {/* {new Date(globalData.updated).toDateString()}  */}
                         </Typography>
                         <Typography variant="body2" component="p">
-                        Nombre de {globalData.deaths} décés dû au COVID-19.
+                            Malheureusement {globalData.deaths} décés dû au COVID-19 depuis le debut de la crise.< br /> Aujourd'hui, <span>{globalData.todayDeaths}</span> personnes sont décédés du coronavirus. Toute nos condoléances aux prôches des défunts.
+                        </Typography>
+                        <Typography color="textSecondary">
+                        <moment>{momentDate }</moment>
                         </Typography>
                     </CardContent>
                 </Grid>
                 <Grid item xs={12} md={12} component={Card} className={cx(styles.card, styles.recovered)}>
                     <Typography color="textSecondary" gutterBottom>
-                        Dans tous ça, sachez qu'aujourd'hui, {globalData.todayRecovered} personnes ont été guéris dans le monde. 
+                        Dans tous ça, sachez qu'aujourd'hui, <span>{globalData.todayRecovered}</span> personnes ont été guéris dans le monde. 
                         </Typography>
                  </Grid>
 

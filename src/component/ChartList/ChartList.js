@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 
 import axios from 'axios';
-import {Card, Grid, CardHeader, CardContent, Typography, Avatar } from '@material-ui/core';
+import {Card, Grid, CardHeader, CardContent, Typography, Avatar, CardMedia } from '@material-ui/core';
 import { makeStyles  } from '@material-ui/core/styles';
 import {Paper, InputBase, IconButton} from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
@@ -36,6 +36,7 @@ const useStyles = makeStyles({
   const useStyles2 = makeStyles((theme) => ({
     root: {
       padding: '2px 4px',
+      margin: '50px 70px 50px 90px',
       display: 'flex',
       alignItems: 'center',
       width: 400,
@@ -45,7 +46,7 @@ const useStyles = makeStyles({
       flex: 1,
     },
     iconButton: {
-      padding: 10,
+      padding: 10, alignItems: 'center',
     },
   }));
 
@@ -119,12 +120,6 @@ function ChartList() {
               </IconButton>
             </Paper>
 
-             {/* <input type='search'
-                    className='search'
-                    placeholder="Enter a country"
-                    value={searchField}
-                    onChange={handleChange}
-            /> */}
 
             <Grid container spacing={4}>
                 
@@ -142,11 +137,7 @@ function ChartList() {
                         title={country.country}
                         subheader={country.updated}
                     />
-                          <img
-                                //className={classes.img}
-                                alt={'Drapeaux de ' + country.country}
-                                src={country.countryInfo.flag}
-                            />
+                    <CardMedia style={{ height:"150px"}} image={country.countryInfo.flag} alt={'Drapeaux de ' + country.country}/>
                     <CardContent>
                         <Typography className={classes.title} color="textSecondary" gutterBottom>
                         Number of the Day are {country.recovered} recovere.
