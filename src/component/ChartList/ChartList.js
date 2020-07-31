@@ -1,9 +1,11 @@
 import React, { useState, useEffect} from 'react';
 
 import axios from 'axios';
-import {Card, Grid, CardHeader, CardContent, Typography, Avatar, CardMedia } from '@material-ui/core';
+import {Card, Grid, CardHeader, CardContent, Typography, Avatar, CardMedia, ButtonBase } from '@material-ui/core';
 import { makeStyles  } from '@material-ui/core/styles';
 import {Paper, InputBase, IconButton} from '@material-ui/core';
+import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
+import HealingIcon from '@material-ui/icons/Healing';
 import SearchIcon from '@material-ui/icons/Search';
 import MenuIcon from '@material-ui/icons/Menu';
 
@@ -41,12 +43,19 @@ const useStyles = makeStyles({
       alignItems: 'center',
       width: 400,
     },
+    svg: {
+      display: 'inline-block',
+      width: 'auto',
+      height: '40px',
+    },
     input: {
       marginLeft: theme.spacing(1),
       flex: 1,
+      width:'200px',
     },
     iconButton: {
-      padding: 10, alignItems: 'center',
+      padding: '160px', alignItems: 'center',
+      width: '50px',heigth: '50px',
     },
   }));
 
@@ -104,20 +113,18 @@ function ChartList() {
             <h2>Les Charts des Pays avec des Data par pays</h2>
             <h3>Fetch a list from an API and display it</h3>
 
-            <Paper component="form" className={classes.root}>
-              <IconButton className={classes.iconButton} aria-label="menu">
-                {/* <MenuIcon /> */}
-              </IconButton>
+            <Paper component="form" className={classes2.root}>
+                <MenuIcon />
+              
               <InputBase
-                className={classes.input}
+                className={classes2.input}
                 placeholder="Chercher le Pays (anglais)"
                 inputProps={{ 'aria-label': 'search google maps' }}
                 value={searchField}
                 onChange={handleChange}
               />
-              <IconButton type="submit" className={classes.iconButton} aria-label="search">
-                {/* <SearchIcon /> */}
-              </IconButton>
+                <SearchIcon />
+             
             </Paper>
 
 
@@ -135,25 +142,32 @@ function ChartList() {
                         </Avatar>
                         }
                         title={country.country}
-                        subheader={country.updated}
+                        subheader={moment(country.updated).fromNow()}
                     />
+        
+
                     <CardMedia style={{ height:"150px"}} image={country.countryInfo.flag} alt={'Drapeaux de ' + country.country}/>
                     <CardContent>
-                        <Typography className={classes.title} color="textSecondary" gutterBottom>
-                        Number of the Day are {country.recovered} recovere.
-                        </Typography>
-                         {moment(country.updated).fromNow()}
+                        
+                        
                         <Typography variant="h5" component="h2">
                         {country.country}
                         </Typography>
+                        <br />
+                        <Typography className={classes.title} color="textSecondary" gutterBottom>
+                        Aujourd'hui le nombre de personne guérie est de <span >{country.recovered}</span> personnes.
+                        </Typography>
                         <Typography className={classes.pos} color="textSecondary">
-                        👨: {country.deaths}
+                        Le nombre de personne contaminé par le Coronarivus est de   <span>{country.cases}</span> cas.
+                        </Typography>
+                        <Typography className={classes.pos} color="textSecondary">
+                        Le nombre de personne décédé s'élève à 👨 <span>{country.deaths} </span> personnes.
                         </Typography>
                         <Typography variant="body2" component="p">
-                        {country.cases} of cases. 
-                        <br />
-                        {country.updated}
+                         Prenez soin de vous et de vos proches!
                         </Typography>
+
+
                     </CardContent>
                 
                 </Card>
@@ -168,10 +182,6 @@ function ChartList() {
           
             </Grid>
 
-                             
-                            
-               
-
         </div>
 
 
@@ -182,3 +192,48 @@ function ChartList() {
 
 
 export default ChartList;
+
+
+
+{/* <Grid  container  spacing={1} justify="left" key={index}>
+
+//                         {/*<Grid className="countryFlag"  >   //spacing={1}  */}
+
+//                             <Grid item xs={12} sm={6} md={3} component={Card} className="country-flag" className={cx(styles.card)}>
+
+//                                 <Typography color="textSecondary" gutterBottom>
+//                                     Drapeau ⛳ {country.flag} personnes ont été guéris dans le monde. 
+//                                     </Typography>
+//                             </Grid>
+
+//                             <Grid item xs={12} sm={6} md={3} component={Card} className="country-data" className={cx(styles.chart)}>
+//                                 <CardContent>
+                                
+//                                 <Typography variant="h5" component="h2">
+//                                 {country.country}
+//                                 {/* <CountUp start={0} end={globalData.cases} duration={2.75} separator="," /> */}
+//                                 </Typography>
+//                                 <Typography color="textSecondary" gutterBottom>
+//                                 <p>👨: {country.deaths}</p>
+//                                 </Typography>
+//                                 <Typography color="textSecondary" gutterBottom>
+//                                 <p>📖: {country.recovered}</p>
+//                                 </Typography>
+//                                 <Typography color="textSecondary">
+//                                 <p>🏘️: {country.cases}</p>
+//                                 </Typography>
+//                                 <Typography color="textSecondary">
+//                                 <p>🏘️: {index}</p>
+//                                 </Typography>
+
+//                                 <Typography variant="body2" component="p">
+//                                 Nombre de personne ayant contractés la COVID-19.
+//                                 </Typography>
+//                                 <Typography color="textSecondary">
+//                                 <p>;): {lastUpdate}</p>
+//                                 </Typography>
+
+//                                 </CardContent>
+//                             </Grid>
+
+//                         </Grid> */}
