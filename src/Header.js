@@ -13,10 +13,10 @@ const Header = () => {
     // const classes = useStyle();
     return ( 
     <AppBar position="static">
-        <Toolbar>
+        <Toolbar style={{backgroundColor:"lightskyblue"}}>
             <Typography //className={classes.typographyStyles}
             >
-            World Map with d3-geo
+            Traceurs COVID-19 avec React, D3-geo, ...
             </Typography>
         </Toolbar>
     </AppBar>

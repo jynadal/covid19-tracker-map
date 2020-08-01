@@ -18,7 +18,8 @@ function App() {
           <Header />
       </Grid>
 
-      <Box display={{ xs: 'none', md: 'block' }} m={1}>      
+      <Box display={{ xs: 'none', md: 'block' }} // m={1} 
+      style={{backgroundColor:"lightskyblue"}}>      
         <Grid item>
             {/* <ChoroMap /> */}
             <GeoChart  data={data} />
@@ -26,7 +27,7 @@ function App() {
         </Grid>
       </Box>
 
-      <Grid item container>
+      <Grid item container  style={{backgroundColor:"grey"}}>
       <Grid item xs={false} sm={2} />
         <Grid item xs={12} sm={12}>
         <h2>Nombre de personne ayant contractés la Covid-19 dans le monde.</h2>
@@ -35,7 +36,7 @@ function App() {
       </Grid>
       
 
-      <Grid item container>
+      <Grid item container style={{backgroundColor:"lightgrey"}}>
         <Grid item xs={false} sm={2} />
         <Grid item xs={12} sm={8}>  
         <ChartList  />        

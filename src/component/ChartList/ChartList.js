@@ -11,7 +11,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 import moment from 'moment/min/moment-with-locales';
 
-//import './ChartList.module.css';
+import './ChartList.module.css';
+
 //import styles from  './ChartList.module.css';
 
 // const useStyles = makeStyles((theme) => ({
@@ -49,9 +50,10 @@ const useStyles = makeStyles({
       height: '40px',
     },
     input: {
-      marginLeft: theme.spacing(1),
+      marginLeft: theme.spacing('3'),
       flex: 1,
       width:'200px',
+      height: '60px',
     },
     iconButton: {
       padding: '160px', alignItems: 'center',
@@ -109,11 +111,12 @@ function ChartList() {
     return (
        
 
-        <div className="Chart">
+        <div className="Chart" style={{backgroundColor:"lightgrey"}}>
             <h2>Les Charts des Pays avec des Data par pays</h2>
             <h3>Fetch a list from an API and display it</h3>
 
-            <Paper component="form" className={classes2.root}>
+            <Grid container spacing={1} justify="center">
+              <Paper component="form" className={classes2.root}>
                 <MenuIcon />
               
               <InputBase
@@ -125,16 +128,17 @@ function ChartList() {
               />
                 <SearchIcon />
              
-            </Paper>
+              </Paper>
+            </Grid>
 
 
-            <Grid container spacing={4}>
+            <Grid container spacing={4}  style={{backgroundColor:"lightgrey"}}>
                 
             
                 {data.map((country,index) =>(
 
                     <Grid item  key={index} xs={12} sm={6} lg={4} >
-                        <Card >
+                        <Card  style={{backgroundColor:"lightslategrey"}}>
                         <CardHeader
                         avatar={
                         <Avatar aria-label="recipe" className={classes.avatar}>
@@ -146,7 +150,7 @@ function ChartList() {
                     />
         
 
-                    <CardMedia style={{ height:"150px"}} image={country.countryInfo.flag} alt={'Drapeaux de ' + country.country}/>
+                    <CardMedia style={{ height:"200px"}} image={country.countryInfo.flag} alt={'Drapeaux de ' + country.country}/>
                     <CardContent>
                         
                         
@@ -166,25 +170,14 @@ function ChartList() {
                         <Typography variant="body2" component="p">
                          Prenez soin de vous et de vos proches!
                         </Typography>
-
-
-                    </CardContent>
-                
+                    </CardContent>                
                 </Card>
-
                </Grid>
-
-                    )
-                   
-
-                    )};
-                
-          
-            </Grid>
+              )                  
+            )}      
+           </Grid>
 
         </div>
-
-
     );
     
 };
