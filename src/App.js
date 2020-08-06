@@ -6,6 +6,8 @@ import { Grid, Box } from '@material-ui/core';
 import "./App.css";
 
 
+
+
 function App() {
   const [property, setProperty] = useState("pop_est");
  // const [searchField, setSearchField] = useState("");
@@ -27,21 +29,21 @@ function App() {
         </Grid>
       </Box>
 
-      <Grid item container  style={{backgroundColor:"grey"}}>
+      {/* <Grid item container  style={{backgroundColor:"grey"}}>        
       <Grid item xs={false} sm={2} />
         <Grid item xs={12} sm={12}>
         <h2>Nombre de personne ayant contractés la Covid-19 dans le monde.</h2>
           <Cards  />
         </Grid>
-      </Grid>
+      </Grid> */}
       
 
-      <Grid item container style={{backgroundColor:"lightgrey"}}>
+      {/* <Grid item container style={{backgroundColor:"lightgrey"}}>
         <Grid item xs={false} sm={2} />
         <Grid item xs={12} sm={8}>  
         <ChartList  />        
         </Grid>
-      </Grid>
+      </Grid> */}
 
       <Grid item>
           <Header />

@@ -59,6 +59,9 @@ const useStyles = makeStyles({
       padding: '160px', alignItems: 'center',
       width: '50px',heigth: '50px',
     },
+    avatar: {
+      backgroundColor: 'lightRed',
+    },
   }));
 
 
@@ -141,7 +144,7 @@ function ChartList() {
                         <Card  style={{backgroundColor:"lightslategrey"}}>
                         <CardHeader
                         avatar={
-                        <Avatar aria-label="recipe" className={classes.avatar}>
+                        <Avatar aria-label="recipe" className={classes2.avatar} style={{backgroundColor:"lightcoral"}}>
                             {country.countryInfo.iso2}
                         </Avatar>
                         }
@@ -159,7 +162,7 @@ function ChartList() {
                         </Typography>
                         <br />
                         <Typography className={classes.title} color="textSecondary" gutterBottom>
-                        Aujourd'hui le nombre de personne guérie est de <span >{country.recovered}</span> personnes.
+                        Du debut de la crise jusqu'à aujourd'hui le nombre de personne guérie est de <span >{country.recovered}</span> personnes.
                         </Typography>
                         <Typography className={classes.pos} color="textSecondary">
                         Le nombre de personne contaminé par le Coronarivus est de   <span>{country.cases}</span> cas.
@@ -185,48 +188,3 @@ function ChartList() {
 
 
 export default ChartList;
-
-
-
-{/* <Grid  container  spacing={1} justify="left" key={index}>
-
-//                         {/*<Grid className="countryFlag"  >   //spacing={1}  */}
-
-//                             <Grid item xs={12} sm={6} md={3} component={Card} className="country-flag" className={cx(styles.card)}>
-
-//                                 <Typography color="textSecondary" gutterBottom>
-//                                     Drapeau ⛳ {country.flag} personnes ont été guéris dans le monde. 
-//                                     </Typography>
-//                             </Grid>
-
-//                             <Grid item xs={12} sm={6} md={3} component={Card} className="country-data" className={cx(styles.chart)}>
-//                                 <CardContent>
-                                
-//                                 <Typography variant="h5" component="h2">
-//                                 {country.country}
-//                                 {/* <CountUp start={0} end={globalData.cases} duration={2.75} separator="," /> */}
-//                                 </Typography>
-//                                 <Typography color="textSecondary" gutterBottom>
-//                                 <p>👨: {country.deaths}</p>
-//                                 </Typography>
-//                                 <Typography color="textSecondary" gutterBottom>
-//                                 <p>📖: {country.recovered}</p>
-//                                 </Typography>
-//                                 <Typography color="textSecondary">
-//                                 <p>🏘️: {country.cases}</p>
-//                                 </Typography>
-//                                 <Typography color="textSecondary">
-//                                 <p>🏘️: {index}</p>
-//                                 </Typography>
-
-//                                 <Typography variant="body2" component="p">
-//                                 Nombre de personne ayant contractés la COVID-19.
-//                                 </Typography>
-//                                 <Typography color="textSecondary">
-//                                 <p>;): {lastUpdate}</p>
-//                                 </Typography>
-
-//                                 </CardContent>
-//                             </Grid>
-
-//                         </Grid> */}

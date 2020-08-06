@@ -16,13 +16,13 @@ const [globalData, setGlobalData] = useState([]);
 
 // Fetching global Data Deaths, Cases, Recovered
 useEffect(() => {
-    // fetch()
+    
 fetch('https://corona.lmao.ninja/v2/all')
 .then(response => response.json())    // one extra step
 .then(data => {
-    console.warn(data);
+    //console.warn(data);
     setGlobalData(data);
-  console.log(data);
+  //console.log(data);
 })
 .catch(error => console.error(error));
 

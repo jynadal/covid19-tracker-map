@@ -17,25 +17,38 @@ function GeoChart({ data, property }) {
   const wrapperRef = useRef();
   const dimensions = useResizeObserver(wrapperRef);
   //const [selectedCountry, setSelectedCountry] = useState(null);
-  const [countries, setCountries] = useState(null);
-
-  // will be called initially and on every data change
-  useEffect(() => {
-
-    const fetchAPI = async () => {
-      setCountries(await fetchCountries());
-    };
-
-    //const dataCountries = {countries.map(country, i)}
-
-    //const minCov = min(fetchCountries.countries, country => fetchCountries[cases]);
-    //const maxCov = max(data.features, feature => feature.properties[property]);
-    //console.warn(minCov,maxCov);
+  const [countries, setCountries] = useState([]);
+  const [dataCountries, setDataCountries] = useState([]);
 
   
 
-    fetchAPI();
-  },[]);
+  // will be called initially and on every data change
+  useEffect(() => {    
+
+   fetch('https://corona.lmao.ninja/v2/countries')
+    .then(res => res.json())
+    .then(dataCountries => {
+      console.warn(dataCountries);
+    
+    console.log(dataCountries);
+    setCountries(dataCountries);
+  })
+
+    console.log(dataCountries)
+    console.log(setCountries.cases)
+
+    //const dataCountries = {countries.map(country, i)}
+
+     const minCov = min(dataCountries, dataCountries.cases);
+
+    // const maxCov = max(data.features, feature => feature.properties[property]);
+    console.warn(minCov
+      //,maxCov
+    );
+
+  },[])
+  console.log(dataCountries)
+    console.log(countries.cases);
 
     useEffect(() => {
 
@@ -43,14 +56,14 @@ function GeoChart({ data, property }) {
 
      //const minProp = min(data.feature,
      // Chart.country => Chart.country.cases);
-     const minProp = min(data.features, feature => feature.properties[property]);
-     const maxProp = max(data.features, feature => feature.properties[property]);
-     console.warn(minProp,maxProp);
+    //  const minProp = min(data.features, feature => feature.properties[property]);
+    //  const maxProp = max(data.features, feature => feature.properties[property]);
+    //  console.warn(minProp,maxProp);
      
 
 
     // const maxProp = max(data.features, feature => feature.properties[property]);
-    console.log(data.features);
+    //console.log(data.features);
      //console.log(fetchCountries.countries.name);
 
     // const colorScale = scaleLinear()
