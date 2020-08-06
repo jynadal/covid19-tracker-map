@@ -22,37 +22,44 @@ function GeoChart({ data, property }) {
 
   
 
-  // will be called initially and on every data change
-  useEffect(() => {    
+  // useEffect fonctionne très bien
+  // useEffect(() => {    
 
-   fetch('https://corona.lmao.ninja/v2/countries')
+  //  fetch('https://corona.lmao.ninja/v2/countries')
+  //   .then(res => res.json())
+  //   .then(dataCountries => {
+  //     console.warn(dataCountries);
+    
+  //   console.log(dataCountries);
+  //   setCountries(dataCountries);
+  // })
+
+  //   console.log(dataCountries)
+  //   console.log(setCountries.cases)
+
+  //   //const dataCountries = {countries.map(country, i)}
+
+  //    //const minCov = min(dataCountries, dataCountries.cases);
+
+  //   // const maxCov = max(data.features, feature => feature.properties[property]);
+  //   console.warn(minCov
+  //     //,maxCov
+  //   );
+
+  // },[])
+
+    useEffect(() => {
+
+    const svg = select(svgRef.current);
+
+    fetch('https://corona.lmao.ninja/v2/countries')
     .then(res => res.json())
     .then(dataCountries => {
       console.warn(dataCountries);
     
     console.log(dataCountries);
     setCountries(dataCountries);
-  })
-
-    console.log(dataCountries)
-    console.log(setCountries.cases)
-
-    //const dataCountries = {countries.map(country, i)}
-
-     const minCov = min(dataCountries, dataCountries.cases);
-
-    // const maxCov = max(data.features, feature => feature.properties[property]);
-    console.warn(minCov
-      //,maxCov
-    );
-
-  },[])
-  console.log(dataCountries)
-    console.log(countries.cases);
-
-    useEffect(() => {
-
-    const svg = select(svgRef.current);
+  });
 
      //const minProp = min(data.feature,
      // Chart.country => Chart.country.cases);
