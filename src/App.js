@@ -18,9 +18,7 @@ function App() {
       <Grid container direction="column">
       <Grid item>
           <Header />
-      </Grid>
-
-    
+      </Grid>    
 
       <Box display={{ xs: 'none', md: 'block' }} // m={1} 
       style={{backgroundColor:"lightskyblue"}}>      
