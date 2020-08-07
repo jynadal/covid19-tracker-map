@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { GeoChart, Cards, ChartList, SearchBox, GeoWorld, ChoroMap } from "./component";
+import { GeoChart, Cards, ChartList, SearchBox, GeoWorld } from "./component";
 import data from "./component/GeoWorld.Chart.geo.json";
 import Header from './Header';
 import { Grid, Box } from '@material-ui/core';
@@ -20,12 +20,14 @@ function App() {
           <Header />
       </Grid>
 
+    
+
       <Box display={{ xs: 'none', md: 'block' }} // m={1} 
       style={{backgroundColor:"lightskyblue"}}>      
         <Grid item>
             {/* <ChoroMap /> */}
             <GeoChart  data={data} />
-              <h2>Select property to highlight</h2>
+              <h2>GeoChart property to highlight</h2>
         </Grid>
       </Box>
 

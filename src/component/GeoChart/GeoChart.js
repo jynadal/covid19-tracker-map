@@ -17,7 +17,7 @@ function GeoChart({ data, property }) {
   const wrapperRef = useRef();
   const dimensions = useResizeObserver(wrapperRef);
   //const [selectedCountry, setSelectedCountry] = useState(null);
-  const [countries, setCountries] = useState([]);
+  const [countries, setCountries] = useState({});
   const [dataCountries, setDataCountries] = useState([]);
 
   
@@ -52,20 +52,25 @@ function GeoChart({ data, property }) {
 
     const svg = select(svgRef.current);
 
-    fetch('https://corona.lmao.ninja/v2/countries')
+   const fetchCountries = fetch('https://corona.lmao.ninja/v2/countries')
     .then(res => res.json())
-    .then(dataCountries => {
-      console.warn(dataCountries);
+    //.then(dataCountries => {
+      console.warn(fetchCountries.country);
     
-    console.log(dataCountries);
-    setCountries(dataCountries);
-  });
-
+    console.log(fetchCountries.country);
+    //setCountries(dataCountries);  });
+  console.warn(dataCountries.country);
+  console.warn(setCountries.cases);
+  console.warn(countries.country);
      //const minProp = min(data.feature,
      // Chart.country => Chart.country.cases);
-    //  const minProp = min(data.features, feature => feature.properties[property]);
-    //  const maxProp = max(data.features, feature => feature.properties[property]);
-    //  console.warn(minProp,maxProp);
+     const minProp = min(fetchCountries, fetchCountries.active);
+     const maxProp = max(countries, countries.active);
+     console.warn(minProp,maxProp);
+
+      // const minProp = min(data.features, feature => feature.properties[property]);
+      // const maxProp = max(data.features, feature => feature.properties[property]);
+      // console.warn(minProp,maxProp);
      
 
 
