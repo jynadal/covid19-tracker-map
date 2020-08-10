@@ -3,6 +3,11 @@
     "features": [{
         "type": "Feature",
         "properties": {
+            "cases": 761,
+    "todayCases": 0,
+    "deaths": 14,
+    "todayDeaths": 0,
+    "recovered": 91,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -109,6 +114,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 114,
+            "todayCases": 28,
+            "deaths": 2,
+            "todayDeaths": 0,
+            "recovered": 32,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -204,6 +214,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 118561,
+    "todayCases": 0,
+    "deaths": 8966,
+    "todayDeaths": 0,
+    "recovered": 103106,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -1189,6 +1204,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 21070,
+    "todayCases": 0,
+    "deaths": 200,
+    "todayDeaths": 0,
+    "recovered": 7038,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -1300,6 +1320,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 2775,
+    "todayCases": 0,
+    "deaths": 88,
+    "todayDeaths": 0,
+    "recovered": 2409,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -1417,6 +1442,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 76536,
+            "todayCases": 0,
+            "deaths": 1246,
+            "todayDeaths": 0,
+            "recovered": 40539,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -1518,6 +1548,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 14306,
+    "todayCases": 0,
+    "deaths": 617,
+    "todayDeaths": 0,
+    "recovered": 12787,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -1725,6 +1760,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 54339,
+    "todayCases": 0,
+    "deaths": 2119,
+    "todayDeaths": 0,
+    "recovered": 42070,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -1835,6 +1875,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 45755,
+    "todayCases": 657,
+    "deaths": 1446,
+    "todayDeaths": 23,
+    "recovered": 6225,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -1967,6 +2012,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 7582,
+            "todayCases": 38,
+            "deaths": 171,
+            "todayDeaths": 0,
+            "recovered": 4832,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -2063,6 +2113,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 958,
+            "todayCases": 30,
+            "deaths": 12,
+            "todayDeaths": 0,
+            "recovered": 745,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -2149,6 +2204,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 462690,
+    "todayCases": 6590,
+    "deaths": 50517,
+    "todayDeaths": 819,
+    "recovered": 308848,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -2394,6 +2454,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 3902,
+            "todayCases": 0,
+            "deaths": 123,
+            "todayDeaths": 0,
+            "recovered": 2913,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -2521,6 +2586,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 71418,
+    "todayCases": 0,
+    "deaths": 1574,
+    "todayDeaths": 0,
+    "recovered": 45658,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -2648,6 +2718,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 5032547,
+            "todayCases": 368,
+            "deaths": 162805,
+            "todayDeaths": 1,
+            "recovered": 2577349,       
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -2732,6 +2807,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 19126,
+            "todayCases": 0,
+            "deaths": 520,
+            "todayDeaths": 7,
+            "recovered": 9271,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -2827,6 +2907,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 210,
+            "todayCases": 0,
+            "deaths": 8,
+            "todayDeaths": 0,
+            "recovered": 135,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -2910,6 +2995,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 5032547,
+            "todayCases": 368,
+            "deaths": 162805,
+            "todayDeaths": 1,
+            "recovered": 2577349,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -3467,6 +3557,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 228195,
+            "todayCases": 0,
+            "deaths": 4251,
+            "todayDeaths": 0,
+            "recovered": 99852,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -3669,6 +3764,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 86423,
+    "todayCases": 1282,
+    "deaths": 3465,
+    "todayDeaths": 80,
+    "recovered": 27373,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -3804,6 +3904,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 2917562,
+    "todayCases": 0,
+    "deaths": 98644,
+    "todayDeaths": 0,
+    "recovered": 2047660,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -4082,6 +4187,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 366671,
+    "todayCases": 0,
+    "deaths": 9889,
+    "todayDeaths": 0,
+    "recovered": 340168,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -4277,6 +4387,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 357710,
+            "todayCases": 0,
+            "deaths": 11939,
+            "todayDeaths": 0,
+            "recovered": 192355,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -4452,6 +4567,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 90537,
+    "todayCases": 0,
+    "deaths": 5877,
+    "todayDeaths": 0,
+    "recovered": 71318,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -4560,6 +4680,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 13,
+    "todayCases": 0,
+    "deaths": 0,
+    "todayDeaths": 0,
+    "recovered": 13,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -4645,6 +4770,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 538,
+            "todayCases": 0,
+            "deaths": 22,
+            "todayDeaths": 0,
+            "recovered": 189,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -4760,6 +4890,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 455409,
+            "todayCases": 0,
+            "deaths": 20424,
+            "todayDeaths": 0,
+            "recovered": 310337,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -4911,6 +5046,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 6375,
+            "todayCases": 0,
+            "deaths": 66,
+            "todayDeaths": 0,
+            "recovered": 4974,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -5019,6 +5159,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 2096,
+            "todayCases": 0,
+            "deaths": 29,
+            "todayDeaths": 0,
+            "recovered": 1446,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -5120,6 +5265,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 1318,
+    "todayCases": 0,
+    "deaths": 37,
+    "todayDeaths": 0,
+    "recovered": 1079,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -5216,6 +5366,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 23280,
+            "todayCases": 0,
+            "deaths": 202,
+            "todayDeaths": 0,
+            "recovered": 12470,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -5383,6 +5538,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 36968,
+            "todayCases": 72,
+            "deaths": 1302,
+            "todayDeaths": 4,
+            "recovered": 25903,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -5527,6 +5687,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 61845,
+    "todayCases": 0,
+    "deaths": 354,
+    "todayDeaths": 0,
+    "recovered": 55739,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -5624,6 +5789,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 39985,
+            "todayCases": 166,
+            "deaths": 777,
+            "todayDeaths": 5,
+            "recovered": 32008,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -5719,6 +5889,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 33247,
+            "todayCases": 0,
+            "deaths": 479,
+            "todayDeaths": 0,
+            "recovered": 29275,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -5844,6 +6019,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 249651,
+    "todayCases": 0,
+    "deaths": 3306,
+    "todayDeaths": 0,
+    "recovered": 143824,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -5955,6 +6135,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 141,
+    "todayCases": 0,
+    "deaths": 3,
+    "todayDeaths": 0,
+    "recovered": 138,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -6038,6 +6223,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 108,
+    "todayCases": 3,
+    "deaths": 0,
+    "todayDeaths": 0,
+    "recovered": 96,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -6126,6 +6316,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 84565,
+            "todayCases": 37,
+            "deaths": 4634,
+            "todayDeaths": 0,
+            "recovered": 79088,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -6447,6 +6642,13 @@
     }, {
         "type": "Feature",
         "properties": {
+
+            "cases": 1208,
+            "todayCases": 0,
+            "deaths": 19,
+            "todayDeaths": 0,
+            "recovered": 856,
+
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -6538,6 +6740,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 1208,
+    "todayCases": 0,
+    "deaths": 19,
+    "todayDeaths": 0,
+    "recovered": 856,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -6628,6 +6835,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 1213,
+    "todayCases": 7,
+    "deaths": 17,
+    "todayDeaths": 0,
+    "recovered": 994,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -6727,6 +6939,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 118753,
+    "todayCases": 0,
+    "deaths": 5521,
+    "todayDeaths": 0,
+    "recovered": 75645,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -7102,6 +7319,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 2030001,
+            "todayCases": 4592,
+            "deaths": 41673,
+            "todayDeaths": 35,
+            "recovered": 1378642,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -7313,6 +7535,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 320117,
+    "todayCases": 0,
+    "deaths": 17976,
+    "todayDeaths": 0,
+    "recovered": 277463,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -7463,6 +7690,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 140603,
+            "todayCases": 0,
+            "deaths": 5161,
+            "todayDeaths": 0,
+            "recovered": 101025,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -7568,6 +7800,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 80054,
+            "todayCases": 495,
+            "deaths": 576,
+            "todayDeaths": 0,
+            "recovered": 55256,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -7666,6 +7903,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 1232,
+    "todayCases": 0,
+    "deaths": 11,
+    "todayDeaths": 0,
+    "recovered": 1171,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -7760,6 +8002,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 42263,
+            "todayCases": 0,
+            "deaths": 1026,
+            "todayDeaths": 0,
+            "recovered": 28877,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -7910,6 +8157,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 96922,
+            "todayCases": 980,
+            "deaths": 1058,
+            "todayDeaths": 0,
+            "recovered": 70680,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -8097,6 +8349,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 39162,
+    "todayCases": 503,
+    "deaths": 1451,
+    "todayDeaths": 4,
+    "recovered": 30764,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -8207,6 +8464,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 357710,
+    "todayCases": 0,
+    "deaths": 11939,
+    "todayDeaths": 0,
+    "recovered": 192355,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -8299,6 +8561,13 @@
     }, {
         "type": "Feature",
         "properties": {
+
+            "cases": 14519,
+            "todayCases": 20,
+            "deaths": 303,
+            "todayDeaths": 1,
+            "recovered": 13543,
+
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -8393,6 +8662,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 70045,
+            "todayCases": 0,
+            "deaths": 469,
+            "todayDeaths": 0,
+            "recovered": 61610,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -8477,6 +8751,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 20,
+            "todayCases": 0,
+            "deaths": 0,
+            "todayDeaths": 0,
+            "recovered": 19,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -8589,6 +8868,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 5672,
+            "todayCases": 0,
+            "deaths": 70,
+            "todayDeaths": 0,
+            "recovered": 1974,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -8675,6 +8959,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 2839,
+            "todayCases": 0,
+            "deaths": 11,
+            "todayDeaths": 0,
+            "recovered": 2541,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -8760,6 +9049,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 359,
+    "todayCases": 2,
+    "deaths": 6,
+    "todayDeaths": 0,
+    "recovered": 308,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -8905,6 +9199,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 293,
+            "todayCases": 0,
+            "deaths": 0,
+            "todayDeaths": 0,
+            "recovered": 260,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -9055,6 +9354,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 9038,
+            "todayCases": 0,
+            "deaths": 125,
+            "todayDeaths": 0,
+            "recovered": 8713,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -9198,6 +9502,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 21750,
+            "todayCases": 0,
+            "deaths": 65,
+            "todayDeaths": 0,
+            "recovered": 15389,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -9296,6 +9605,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 80713,
+            "todayCases": 0,
+            "deaths": 492,
+            "todayDeaths": 0,
+            "recovered": 70910,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -9424,6 +9738,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 282645,
+            "todayCases": 782,
+            "deaths": 6052,
+            "todayDeaths": 17,
+            "recovered": 258099,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -9565,6 +9884,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 122754,
+            "todayCases": 3379,
+            "deaths": 2168,
+            "todayDeaths": 24,
+            "recovered": 66852,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -9776,6 +10100,14 @@
     }, {
         "type": "Feature",
         "properties": {
+
+            "cases": 0,
+            "todayCases": 0,
+            "deaths": 0,
+            "todayDeaths": 0,
+            "recovered": 0,
+
+
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -9894,6 +10226,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 80054,
+            "todayCases": 495,
+            "deaths": 576,
+            "todayDeaths": 0,
+            "recovered": 55256,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -9978,6 +10315,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 112092,
+            "todayCases": 0,
+            "deaths": 178,
+            "todayDeaths": 0,
+            "recovered": 108831,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -10062,6 +10404,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 284226,
+            "todayCases": 0,
+            "deaths": 3055,
+            "todayDeaths": 0,
+            "recovered": 247089,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -10213,6 +10560,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 999,
+            "todayCases": 0,
+            "deaths": 48,
+            "todayDeaths": 0,
+            "recovered": 311,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -10315,6 +10667,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 3345,
+            "todayCases": 15,
+            "deaths": 58,
+            "todayDeaths": 0,
+            "recovered": 3148,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -10454,6 +10811,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 7665,
+            "todayCases": 0,
+            "deaths": 62,
+            "todayDeaths": 0,
+            "recovered": 6443,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -10570,6 +10932,13 @@
     }, {
         "type": "Feature",
         "properties": {
+
+            "cases": 0,
+            "todayCases": 0,
+            "deaths": 0,
+            "todayDeaths": 0,
+            "recovered": 0,
+
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -10699,6 +11068,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 25,
+            "todayCases": 0,
+            "deaths": 0,
+            "todayDeaths": 0,
+            "recovered": 24,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -10785,6 +11159,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 237265,
+            "todayCases": 0,
+            "deaths": 5798,
+            "todayDeaths": 0,
+            "recovered": 220546,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -10933,6 +11312,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 477,
+            "todayCases": 0,
+            "deaths": 7,
+            "todayDeaths": 0,
+            "recovered": 443,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -11017,6 +11401,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 28809,
+            "todayCases": 494,
+            "deaths": 179,
+            "todayDeaths": 4,
+            "recovered": 19587,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -11146,6 +11535,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 750,
+            "todayCases": 3,
+            "deaths": 10,
+            "todayDeaths": 0,
+            "recovered": 392,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -11265,6 +11659,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 1768,
+            "todayCases": 0,
+            "deaths": 508,
+            "todayDeaths": 0,
+            "recovered": 898,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -11384,6 +11783,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 20270,
+            "todayCases": 408,
+            "deaths": 266,
+            "todayDeaths": 11,
+            "recovered": 11147,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -11706,6 +12110,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 27,
+            "todayCases": 0,
+            "deaths": 1,
+            "todayDeaths": 0,
+            "recovered": 18,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -11813,6 +12222,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 22,
+            "todayCases": 0,
+            "deaths": 0,
+            "todayDeaths": 0,
+            "recovered": 22,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -11901,6 +12315,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 1569,
+            "todayCases": 0,
+            "deaths": 22,
+            "todayDeaths": 0,
+            "recovered": 1524,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -12048,6 +12467,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 163,
+            "todayCases": 0,
+            "deaths": 3,
+            "todayDeaths": 0,
+            "recovered": 53,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -12218,6 +12642,14 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 0,
+            "todayCases": 0,
+            "deaths": 0,
+            "todayDeaths": 0,
+            "recovered": 0,
+
+
+
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -12348,6 +12780,14 @@
     }, {
         "type": "Feature",
         "properties": {
+
+            "cases": 0,
+            "todayCases": 0,
+            "deaths": 0,
+            "todayDeaths": 0,
+            "recovered": 0,
+
+
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -12441,6 +12881,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 6016,
+            "todayCases": 0,
+            "deaths": 188,
+            "todayDeaths": 0,
+            "recovered": 3155,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -12538,6 +12983,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 21696,
+            "todayCases": 0,
+            "deaths": 719,
+            "todayDeaths": 0,
+            "recovered": 19596,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -12650,6 +13100,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 72016,
+            "todayCases": 858,
+            "deaths": 9861,
+            "todayDeaths": 2,
+            "recovered": 17700,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -12740,6 +13195,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 13014,
+            "todayCases": 0,
+            "deaths": 435,
+            "todayDeaths": 0,
+            "recovered": 7374,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -12843,6 +13303,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 13396,
+            "todayCases": 0,
+            "deaths": 384,
+            "todayDeaths": 0,
+            "recovered": 7042,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -12940,6 +13405,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 68503,
+            "todayCases": 0,
+            "deaths": 580,
+            "todayDeaths": 0,
+            "recovered": 63756,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -13059,6 +13529,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 36108,
+            "todayCases": 0,
+            "deaths": 1985,
+            "todayDeaths": 0,
+            "recovered": 31600,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -13158,6 +13633,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 17731,
+            "todayCases": 0,
+            "deaths": 390,
+            "todayDeaths": 0,
+            "recovered": 12320,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -13268,6 +13748,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 215210,
+            "todayCases": 0,
+            "deaths": 9252,
+            "todayDeaths": 0,
+            "recovered": 196200,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -13401,6 +13886,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 354530,
+            "todayCases": 0,
+            "deaths": 28500,
+            "todayDeaths": 0,
+            "recovered": 0,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -13527,6 +14017,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 14306,
+            "todayCases": 0,
+            "deaths": 617,
+            "todayDeaths": 0,
+            "recovered": 12787,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -13632,6 +14127,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 2133,
+            "todayCases": 9,
+            "deaths": 63,
+            "todayDeaths": 0,
+            "recovered": 1956,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -13724,6 +14224,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 7532,
+            "todayCases": 0,
+            "deaths": 331,
+            "todayDeaths": 0,
+            "recovered": 6980,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -13837,6 +14342,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 195633,
+            "todayCases": 0,
+            "deaths": 30312,
+            "todayDeaths": 0,
+            "recovered": 82460,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -13996,6 +14506,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 308134,
+            "todayCases": 0,
+            "deaths": 46413,
+            "todayDeaths": 0,
+            "recovered": 0,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -14133,6 +14648,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 5123,
+            "todayCases": 0,
+            "deaths": 210,
+            "todayDeaths": 0,
+            "recovered": 1374,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -14268,6 +14788,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 5404,
+            "todayCases": 0,
+            "deaths": 155,
+            "todayDeaths": 0,
+            "recovered": 4688,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -14385,6 +14910,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 4621,
+            "todayCases": 24,
+            "deaths": 602,
+            "todayDeaths": 2,
+            "recovered": 3464,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -14491,6 +15021,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 26372,
+            "todayCases": 0,
+            "deaths": 1768,
+            "todayDeaths": 0,
+            "recovered": 23364,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -14579,6 +15114,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 1930,
+            "todayCases": 0,
+            "deaths": 10,
+            "todayDeaths": 0,
+            "recovered": 1825,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -14674,6 +15214,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 249204,
+            "todayCases": 0,
+            "deaths": 35187,
+            "todayDeaths": 0,
+            "recovered": 201323,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -14846,6 +15391,13 @@
     }, {
         "type": "Feature",
         "properties": {
+
+            "cases": 9645,
+            "todayCases": 0,
+            "deaths": 290,
+            "todayDeaths": 0,
+            "recovered": 9355,
+
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -14942,6 +15494,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 2194,
+            "todayCases": 23,
+            "deaths": 81,
+            "todayDeaths": 0,
+            "recovered": 1658,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -15036,6 +15593,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 7073,
+            "todayCases": 0,
+            "deaths": 119,
+            "todayDeaths": 0,
+            "recovered": 5750,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -15118,6 +15680,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 1281,
+            "todayCases": 6,
+            "deaths": 32,
+            "todayDeaths": 0,
+            "recovered": 1070,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -15215,6 +15782,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 26628,
+            "todayCases": 0,
+            "deaths": 828,
+            "todayDeaths": 0,
+            "recovered": 18676,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -15317,6 +15889,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 11399,
+            "todayCases": 0,
+            "deaths": 517,
+            "todayDeaths": 0,
+            "recovered": 7480,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -15409,6 +15986,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 3480,
+            "todayCases": 0,
+            "deaths": 60,
+            "todayDeaths": 0,
+            "recovered": 2178,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -15502,6 +16084,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 56982,
+            "todayCases": 0,
+            "deaths": 6153,
+            "todayDeaths": 0,
+            "recovered": 0,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -15591,6 +16178,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 9468,
+            "todayCases": 0,
+            "deaths": 256,
+            "todayDeaths": 0,
+            "recovered": 8857,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -15768,6 +16360,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 49515,
+            "todayCases": 0,
+            "deaths": 1774,
+            "todayDeaths": 0,
+            "recovered": 36041,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -15888,6 +16485,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 52061,
+            "todayCases": 0,
+            "deaths": 1743,
+            "todayDeaths": 0,
+            "recovered": 37840,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -15996,6 +16598,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 57895,
+            "todayCases": 0,
+            "deaths": 2566,
+            "todayDeaths": 0,
+            "recovered": 28992,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -16115,6 +16722,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 877135,
+            "todayCases": 5241,
+            "deaths": 14725,
+            "todayDeaths": 119,
+            "recovered": 683592,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -16838,6 +17450,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 27332,
+            "todayCases": 0,
+            "deaths": 621,
+            "todayDeaths": 0,
+            "recovered": 14047,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -16959,6 +17576,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 2523,
+            "todayCases": 43,
+            "deaths": 31,
+            "todayDeaths": 2,
+            "recovered": 1846,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -17067,6 +17689,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 2223,
+            "todayCases": 0,
+            "deaths": 125,
+            "todayDeaths": 0,
+            "recovered": 1909,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -17160,6 +17787,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 81967,
+            "todayCases": 0,
+            "deaths": 5766,
+            "todayDeaths": 0,
+            "recovered": 0,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -17275,6 +17907,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 78261,
+            "todayCases": 1453,
+            "deaths": 1852,
+            "todayDeaths": 33,
+            "recovered": 43055,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -17448,6 +18085,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 1483,
+            "todayCases": 0,
+            "deaths": 64,
+            "todayDeaths": 0,
+            "recovered": 520,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -17604,6 +18246,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 400,
+            "todayCases": 0,
+            "deaths": 1,
+            "todayDeaths": 0,
+            "recovered": 304,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -17692,6 +18339,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 1936,
+            "todayCases": 0,
+            "deaths": 38,
+            "todayDeaths": 0,
+            "recovered": 1600,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -17792,6 +18444,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 1158,
+            "todayCases": 0,
+            "deaths": 54,
+            "todayDeaths": 0,
+            "recovered": 961,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -17906,6 +18563,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 804,
+            "todayCases": 0,
+            "deaths": 2,
+            "todayDeaths": 0,
+            "recovered": 63,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -18021,6 +18683,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 4620,
+            "todayCases": 0,
+            "deaths": 59,
+            "todayDeaths": 0,
+            "recovered": 1641,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -18158,6 +18825,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 16447,
+            "todayCases": 0,
+            "deaths": 103,
+            "todayDeaths": 0,
+            "recovered": 12484,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -18279,6 +18951,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 17718,
+    "todayCases": 0,
+    "deaths": 391,
+    "todayDeaths": 0,
+    "recovered": 15320,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -18415,6 +19092,15 @@
     }, {
         "type": "Feature",
         "properties": {
+
+
+
+
+             "cases": 9309,
+    "todayCases": 0,
+    "deaths": 215,
+    "todayDeaths": 0,
+    "recovered": 8048,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -18612,6 +19298,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 3546,
+            "todayCases": 0,
+            "deaths": 58,
+            "todayDeaths": 0,
+            "recovered": 1589,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -18736,6 +19427,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 5334,
+            "todayCases": 4,
+            "deaths": 59,
+            "todayDeaths": 0,
+            "recovered": 5066,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -18826,6 +19522,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 33626,
+            "todayCases": 0,
+            "deaths": 1273,
+            "todayDeaths": 0,
+            "recovered": 23238,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -18963,6 +19664,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 95006,
+            "todayCases": 0,
+            "deaths": 4951,
+            "todayDeaths": 0,
+            "recovered": 48898,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -19080,6 +19786,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 282,
+            "todayCases": 0,
+            "deaths": 0,
+            "todayDeaths": 0,
+            "recovered": 225,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -19183,6 +19894,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 20900,
+            "todayCases": 0,
+            "deaths": 365,
+            "todayDeaths": 0,
+            "recovered": 9027,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -19317,6 +20033,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 7787,
+            "todayCases": 0,
+            "deaths": 51,
+            "todayDeaths": 0,
+            "recovered": 5609,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -19423,6 +20144,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 39642,
+            "todayCases": 0,
+            "deaths": 199,
+            "todayDeaths": 0,
+            "recovered": 36384,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -19523,6 +20249,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 7664,
+            "todayCases": 0,
+            "deaths": 49,
+            "todayDeaths": 0,
+            "recovered": 6757,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -19668,6 +20399,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 935,
+            "todayCases": 0,
+            "deaths": 16,
+            "todayDeaths": 0,
+            "recovered": 136,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -19759,6 +20495,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 2032,
+            "todayCases": 0,
+            "deaths": 27,
+            "todayDeaths": 0,
+            "recovered": 944,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -19853,6 +20594,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 4821,
+            "todayCases": 0,
+            "deaths": 83,
+            "todayDeaths": 0,
+            "recovered": 2182,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -19935,6 +20681,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 24411,
+            "todayCases": 0,
+            "deaths": 399,
+            "todayDeaths": 0,
+            "recovered": 10444,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -20047,6 +20798,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 1224,
+            "todayCases": 0,
+            "deaths": 78,
+            "todayDeaths": 0,
+            "recovered": 705,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -20149,6 +20905,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 4879,
+            "todayCases": 0,
+            "deaths": 107,
+            "todayDeaths": 0,
+            "recovered": 652,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -20280,6 +21041,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 742,
+            "todayCases": 0,
+            "deaths": 23,
+            "todayDeaths": 0,
+            "recovered": 175,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -20367,6 +21133,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 29644,
+            "todayCases": 0,
+            "deaths": 449,
+            "todayDeaths": 0,
+            "recovered": 20553,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -20506,6 +21277,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 12526,
+            "todayCases": 0,
+            "deaths": 134,
+            "todayDeaths": 0,
+            "recovered": 10148,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -20630,6 +21406,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 2552,
+            "todayCases": 0,
+            "deaths": 124,
+            "todayDeaths": 0,
+            "recovered": 1954,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -20781,6 +21562,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 2120,
+            "todayCases": 0,
+            "deaths": 15,
+            "todayDeaths": 0,
+            "recovered": 795,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -20933,6 +21719,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 6444,
+            "todayCases": 0,
+            "deaths": 157,
+            "todayDeaths": 0,
+            "recovered": 5291,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -21047,6 +21838,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 4491,
+            "todayCases": 0,
+            "deaths": 137,
+            "todayDeaths": 0,
+            "recovered": 2137,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -21150,6 +21946,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 2652,
+            "todayCases": 0,
+            "deaths": 15,
+            "todayDeaths": 0,
+            "recovered": 563,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -21269,6 +22070,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 1153,
+            "todayCases": 0,
+            "deaths": 69,
+            "todayDeaths": 0,
+            "recovered": 1057,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -21402,6 +22208,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 45244,
+            "todayCases": 0,
+            "deaths": 930,
+            "todayDeaths": 0,
+            "recovered": 32430,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -21535,6 +22346,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 2111,
+            "todayCases": 0,
+            "deaths": 5,
+            "todayDeaths": 0,
+            "recovered": 1258,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -21623,6 +22439,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 10,
+            "todayCases": 0,
+            "deaths": 1,
+            "todayDeaths": 0,
+            "recovered": 8,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 7,
@@ -21726,6 +22547,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 11780,
+            "todayCases": 0,
+            "deaths": 763,
+            "todayDeaths": 0,
+            "recovered": 6194,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -21880,6 +22706,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 2450,
+            "todayCases": 0,
+            "deaths": 47,
+            "todayDeaths": 0,
+            "recovered": 1175,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -22018,6 +22849,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 10715,
+            "todayCases": 0,
+            "deaths": 223,
+            "todayDeaths": 0,
+            "recovered": 7101,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -22137,6 +22973,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 1877,
+            "todayCases": 0,
+            "deaths": 67,
+            "todayDeaths": 0,
+            "recovered": 1427,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -22234,6 +23075,20 @@
     }, {
         "type": "Feature",
         "properties": {
+
+
+
+
+
+            "cases": 3227,
+            "todayCases": 0,
+            "deaths": 93,
+            "todayDeaths": 0,
+            "recovered": 1728,
+
+
+
+
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 5,
@@ -22333,6 +23188,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 3227,
+            "todayCases": 0,
+            "deaths": 93,
+            "todayDeaths": 0,
+            "recovered": 1728,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -22444,6 +23304,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 2968,
+            "todayCases": 0,
+            "deaths": 55,
+            "todayDeaths": 0,
+            "recovered": 1476,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 4,
@@ -22530,6 +23395,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 942,
+            "todayCases": 0,
+            "deaths": 76,
+            "todayDeaths": 0,
+            "recovered": 838,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -22663,6 +23533,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 1012,
+            "todayCases": 0,
+            "deaths": 22,
+            "todayDeaths": 0,
+            "recovered": 697,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 6,
@@ -22757,6 +23632,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 1642,
+            "todayCases": 0,
+            "deaths": 51,
+            "todayDeaths": 0,
+            "recovered": 1241,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -22863,6 +23743,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 509,
+            "todayCases": 0,
+            "deaths": 21,
+            "todayDeaths": 0,
+            "recovered": 183,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -22987,6 +23872,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 1223,
+            "todayCases": 0,
+            "deaths": 5,
+            "todayDeaths": 0,
+            "recovered": 1102,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -23089,6 +23979,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 538184,
+            "todayCases": 0,
+            "deaths": 9604,
+            "todayDeaths": 0,
+            "recovered": 387316,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 2,
@@ -23260,6 +24155,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 7164,
+            "todayCases": 0,
+            "deaths": 199,
+            "todayDeaths": 0,
+            "recovered": 5786,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,
@@ -23396,6 +24296,11 @@
     }, {
         "type": "Feature",
         "properties": {
+            "cases": 4339,
+            "todayCases": 0,
+            "deaths": 84,
+            "todayDeaths": 0,
+            "recovered": 1264,
             "scalerank": 1,
             "featurecla": "Admin-0 country",
             "labelrank": 3,

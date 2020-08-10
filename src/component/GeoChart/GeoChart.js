@@ -2,7 +2,6 @@ import React, { useRef, useEffect, useState } from "react";
 import { select, geoPath, geoMercator, min, max, scaleLinear } from "d3";
 import useResizeObserver from "./../../useResizeObserver";
 //import {Chart} from '../Chart/Chart';
-import { fetchCountries} from '../../api';
 
 
 
@@ -16,71 +15,21 @@ function GeoChart({ data, property }) {
   const svgRef = useRef();
   const wrapperRef = useRef();
   const dimensions = useResizeObserver(wrapperRef);
-  //const [selectedCountry, setSelectedCountry] = useState(null);
-  const [countries, setCountries] = useState({});
-  const [dataCountries, setDataCountries] = useState([]);
+  const [selectedCountry, setSelectedCountry] = useState(null);
 
-  
 
-  // useEffect fonctionne très bien
-  // useEffect(() => {    
-
-  //  fetch('https://corona.lmao.ninja/v2/countries')
-  //   .then(res => res.json())
-  //   .then(dataCountries => {
-  //     console.warn(dataCountries);
-    
-  //   console.log(dataCountries);
-  //   setCountries(dataCountries);
-  // })
-
-  //   console.log(dataCountries)
-  //   console.log(setCountries.cases)
-
-  //   //const dataCountries = {countries.map(country, i)}
-
-  //    //const minCov = min(dataCountries, dataCountries.cases);
-
-  //   // const maxCov = max(data.features, feature => feature.properties[property]);
-  //   console.warn(minCov
-  //     //,maxCov
-  //   );
-
-  // },[])
 
     useEffect(() => {
 
     const svg = select(svgRef.current);
-
-   const fetchCountries = fetch('https://corona.lmao.ninja/v2/countries')
-    .then(res => res.json())
-    //.then(dataCountries => {
-      console.warn(fetchCountries.country);
     
-    console.log(fetchCountries.country);
-    //setCountries(dataCountries);  });
-  console.warn(dataCountries.country);
-  console.warn(setCountries.cases);
-  console.warn(countries.country);
-     //const minProp = min(data.feature,
-     // Chart.country => Chart.country.cases);
-     const minProp = min(fetchCountries, fetchCountries.active);
-     const maxProp = max(countries, countries.active);
-     console.warn(minProp,maxProp);
 
-      // const minProp = min(data.features, feature => feature.properties[property]);
-      // const maxProp = max(data.features, feature => feature.properties[property]);
-      // console.warn(minProp,maxProp);
-     
+      const minProp = min(data.features, feature => feature.properties[property]);
+      const maxProp = max(data.features, feature => feature.properties[property]);
+      const colorScale = scaleLinear()
+      .domain([minProp, maxProp])       
+      .range(["white", "red"]) 
 
-
-    // const maxProp = max(data.features, feature => feature.properties[property]);
-    //console.log(data.features);
-     //console.log(fetchCountries.countries.name);
-
-    // const colorScale = scaleLinear()
-    //   .domain([minProp, maxProp])
-    //   .range(["#ccc", "red"]);
 
     // use resized dimensions
     // but fall back to getBoundingClientRect, if no dimensions yet.
@@ -89,8 +38,8 @@ function GeoChart({ data, property }) {
 
     // projects geo-coordinates on a 2D plane
     const projection = geoMercator()
-      .fitSize([width, height], data)
-      //.precision(100);
+      .fitSize([width, height], selectedCountry || data)
+      .precision(200);
 
     // takes geojson data,
     // transforms that into the d attribute of a path element
@@ -101,31 +50,30 @@ function GeoChart({ data, property }) {
       .selectAll(".country")
       .data(data.features)
       .join("path")
-    //   .on("click", feature => {
-    //     setSelectedCountry(selectedCountry === feature ? null : feature);
-    //   })
+      .on("click", feature => {
+         setSelectedCountry(selectedCountry === feature ? null : feature);
+       })
        .attr("class", "country")
-    //   .transition()
-    //   //.attr("fill", feature => colorScale(feature.properties[property]))
+       .transition()
+    .attr("fill", feature => colorScale(feature.properties[property]))
       .attr("d", feature => pathGenerator(feature));
 
     // render text
-  //   svg
-  //     .selectAll(".label")
-  //     .data([selectedCountry])
-  //     .join("text")
-  //     .attr("class", "label")
-  //     .text(
-  //       feature =>
-  //         feature &&
-  //         feature.properties.name +
-  //           ": " +
-  //           feature.properties[property].toLocaleString()
-  //     )
-  //     .attr("x", 10)
-  //     .attr("y", 25);
-   }, [data, dimensions, property]);
-   //, selectedCountry
+    svg
+      .selectAll(".label")
+      .data([selectedCountry])
+      .join("text")
+      .attr("class", "label")
+      .text(
+        feature =>
+          feature &&
+          feature.properties.name +
+            ": " +
+            feature.properties[property].toLocaleString()
+      )
+      .attr("x", 110)
+      .attr("y", 225);
+   }, [data, dimensions, property, selectedCountry]);
 
   return (
     <div ref={wrapperRef} style={{ marginBottom: "2rem" }}>
