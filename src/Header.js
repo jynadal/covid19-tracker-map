@@ -16,7 +16,7 @@ const Header = () => {
         <Toolbar style={{backgroundColor:"lightskyblue"}}>
             <Typography //className={classes.typographyStyles}
             >
-            Traceurs COVID-19 avec React, D3-geo, ...
+            <h1>Traceurs COVID-19 avec React (Hooks), D3-geo, ...</h1>
             </Typography>
         </Toolbar>
     </AppBar>

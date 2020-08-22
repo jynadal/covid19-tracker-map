@@ -1,11 +1,11 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 
 import axios from 'axios';
-import {Card, Grid, CardHeader, CardContent, Typography, Avatar, CardMedia, ButtonBase } from '@material-ui/core';
+import {Card, Grid, CardHeader, CardContent, Typography, Avatar, CardMedia} from '@material-ui/core';
 import { makeStyles  } from '@material-ui/core/styles';
-import {Paper, InputBase, IconButton} from '@material-ui/core';
-import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
-import HealingIcon from '@material-ui/icons/Healing';
+import {Paper, InputBase} from '@material-ui/core';
+// import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
+// import HealingIcon from '@material-ui/icons/Healing';
 import SearchIcon from '@material-ui/icons/Search';
 import MenuIcon from '@material-ui/icons/Menu';
 
@@ -107,16 +107,13 @@ function ChartList() {
 
     const onChange = (evt) => {
     setSearchField(evt.target.value);
-    }
-
+    }    
     
-    
-    return (
-       
+    return (       
 
         <div className="Chart" style={{backgroundColor:"lightgrey"}}>
-            <h2>Les Charts des Pays avec des Data par pays</h2>
-            <h3>Fetch a list from an API and display it</h3>
+            <h2>Le tableau des Pays avec les informations relatives.</h2>
+            <h3>React Fetch API with Hooks, Axios and material-ui</h3>
 
             <Grid container spacing={1} justify="center">
               <Paper component="form" className={classes2.root}>
@@ -124,7 +121,7 @@ function ChartList() {
               
               <InputBase
                 className={classes2.input}
-                placeholder="Chercher le Pays (anglais)"
+                placeholder="Rechercher un Pays (anglais)"
                 inputProps={{ 'aria-label': 'search google maps' }}
                 value={searchField}
                 onChange={handleChange}
@@ -162,13 +159,13 @@ function ChartList() {
                         </Typography>
                         <br />
                         <Typography className={classes.title} color="textSecondary" gutterBottom>
-                        Du debut de la crise jusqu'à aujourd'hui le nombre de personne guérie est de <span >{country.recovered}</span> personnes.
+                        Du début de la crise jusqu'à aujourd'hui, le nombre de personnes guéries est de <span >{country.recovered}</span>.
                         </Typography>
                         <Typography className={classes.pos} color="textSecondary">
-                        Le nombre de personne contaminé par le Coronarivus est de   <span>{country.cases}</span> cas.
+                        Le nombre de personnes contaminées par le Coronarivus est de   <span>{country.cases}</span>.
                         </Typography>
                         <Typography className={classes.pos} color="textSecondary">
-                        Le nombre de personne décédé s'élève à 👨 <span>{country.deaths} </span> personnes.
+                        Le nombre de personnes décédés s'élève à 👨 <span>{country.deaths} </span>.
                         </Typography>
                         <Typography variant="body2" component="p">
                          Prenez soin de vous et de vos proches!

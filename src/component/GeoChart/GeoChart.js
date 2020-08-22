@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { select, geoPath, geoMercator, min, max, scaleLinear } from "d3";
 import useResizeObserver from "./../../useResizeObserver";
-//import {Chart} from '../Chart/Chart';
 
 
 
@@ -17,19 +16,29 @@ function GeoChart({ data, property }) {
   const dimensions = useResizeObserver(wrapperRef);
   const [selectedCountry, setSelectedCountry] = useState(null);
 
-
-
     useEffect(() => {
 
     const svg = select(svgRef.current);
-    
-
       const minProp = min(data.features, feature => feature.properties[property]);
-      const maxProp = max(data.features, feature => feature.properties[property]);
-      const colorScale = scaleLinear()
-      .domain([minProp, maxProp])       
-      .range(["white", "red"]) 
+      const maxProp = max(data.features, feature => feature.properties[property]);    
+        const colorScale = scaleLinear()
+        .domain([minProp, maxProp])
+        .range(["white", "red"])
 
+  //          if ([property] == "cases"){
+  //            return
+  //     colorScale.domain([minProp, maxProp])
+  //     colorScale.range(["white", "green"])
+  //     console.log("property = cases")
+  //     } 
+  //     if ([property] == "pop_est") { 
+  // return
+  //     colorScale.domain([minProp, maxProp])
+  //     colorScale.range(["white", "red"]);
+  //     }
+      
+       // const colorScale = scaleLinear()
+     
 
     // use resized dimensions
     // but fall back to getBoundingClientRect, if no dimensions yet.
@@ -73,6 +82,10 @@ function GeoChart({ data, property }) {
       )
       .attr("x", 110)
       .attr("y", 225);
+
+
+
+
    }, [data, dimensions, property, selectedCountry]);
 
   return (

@@ -2,11 +2,15 @@
  Header {
   background-color: lightskyblue
 }
-h2, h3 {
+#carte {
+  color:red;
   text-align: center;
-  color:lightslategrey;
   background-color: lightskyblue;
-
+}
+h2 {
+  text-align: center;
+  color:lightslategrey; 
+  background-color: lightskyblue;
 }
   /*.App {
   display: flex;
